@@ -1,8 +1,10 @@
 # RecyclerListView
 
 [![npm version](https://img.shields.io/npm/v/recyclerlistview.svg)](https://www.npmjs.com/package/recyclerlistview)
-[![travis](https://travis-ci.org/Flipkart/recyclerlistview.svg?branch=recyclerlistview-master)](https://travis-ci.org/Flipkart/recyclerlistview)
+[![travis](https://travis-ci.org/Flipkart/recyclerlistview.svg?branch=master)](https://travis-ci.org/Flipkart/recyclerlistview)
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
+If this project has helped you out, please support us with a star :star2:.
 
 This is a high performance listview for React Native and Web with support for complex layouts. JS only with no native dependencies, inspired by both RecyclerView on Android
 and UICollectionView on iOS.
@@ -12,11 +14,12 @@ and UICollectionView on iOS.
 * **[Overview and features](#overview-and-features)**
 * **[Why?](#why)**
 * **[Demo](#demo)**
+* **[Props](#props)**
 * **[Sample Code](#sample-code)**
 * **[License](#license)**
 * **[Contact us](#contact-us)**
 
-Note: Documentation will be upgraded soon, for now check code comments for clarity and exploring features.
+Note: Documentation will be upgraded soon, for now check code comments for clarity and exploring features. This component is actively tested with React Native Web as well.
 
 
 ## Overview and features
@@ -53,7 +56,9 @@ not be as fast.
 
 ## Demo
 
-Expo snack demo: https://snack.expo.io/B1GYad52b
+Expo snack demos: 
+https://snack.expo.io/rksoUdx-f
+https://snack.expo.io/B1GYad52b
 
 Sample project: https://github.com/naqvitalha/travelMate
 
@@ -63,10 +68,13 @@ Watch Demo Video: https://www.youtube.com/watch?v=Tnv4HMmPgMc
 
 [![Watch Video](https://img.youtube.com/vi/Tnv4HMmPgMc/0.jpg)](https://www.youtube.com/watch?v=Tnv4HMmPgMc)
 
+## Props
+For full feature set have a look at prop definitions of [RecyclerListView](https://github.com/Flipkart/recyclerlistview/blob/593b7636264a49eb17bf75f88513420b8f0c9b85/src/core/RecyclerListView.tsx#L478-L547)
+(bottom of the file).
+
 ## Sample Code
 Please go through DataProvider, LayoutProvider and rowRenderer in detail. Those are the basic building blocks of this component. For more details dive into
-the source code, lot of relevant comments have been added to help you out. For full feature set have a look at prop definitions of [RecyclerListView](src/recyclerlistview/RecyclerListView.js)
-(bottom of the file).
+the source code, lot of relevant comments have been added to help you out. 
 
 ```js
 /***
@@ -216,12 +224,11 @@ const styles = {
 };
 ```
 You can find similar web sample [here](samples/web/Sample1.js).
-Note: Works with React Native Web out of the box, to use with ReactJS add an extra webpack plugin  `RLV_ENV: JSON.stringify('browser')` or, start importing from
-`recyclerlistview/web` e.g., `import { RecyclerListView } from "recyclerlistview/web"`. Only platform specific code is part of the build so, no unnecessary code will
-ship with your app.
+Note: Works with React Native Web out of the box, to use with ReactJS start importing from `recyclerlistview/web` e.g., `import { RecyclerListView } from "recyclerlistview/web"`. Use aliases if you
+want to preserve import path. Only platform specific code is part of the build so, no unnecessary code will ship with your app.
 
 ## License
-Apache v2.0
+[Apache v2.0](https://github.com/Flipkart/recyclerlistview/blob/master/LICENSE.md)
 
 ## Contact Us
 Please open issues for any bugs that you encounter. You can reach out to me on twitter [@naqvitalha](https://www.twitter.com/naqvitalha) or, write to cross-platform@flipkart.com for any questions that
